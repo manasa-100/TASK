@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang=""en";
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Admission Form</title>
+</head>
+<body>
+<h1>Student Admission Form</h1>
+<form action="process_admission.php" method="POST">
+  <label for="first_name">First Name:</label>
+  <input type="text" id="first_name" name="first_name" required><br>
+  
+  <label for="last_name">Last Name:</label>
+  <input type="text" id="last_name" name="last_name" required><br>
+  
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" required><br>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+  
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required><br>
+  
+  <label for="address">Address:</label>
+  <textarea id="address" name="address" rows="4" required></textarea><br>
+  
+  <label for="program">Program of Interest:</label>
+  <select id="program" name="program" required>
+    <option value="computer_science">Computer Science</option>
+    <option value="engineering">Engineering</option>
+    <option value="business">Business Administration</option>
+    <!-- Add more options as needed -->
+  </select><br>
+  
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  
+  <label for="citizenship">Citizenship:</label>
+  <input type="radio" id="citizen" name="citizenship" value="citizen" required>
+  <label for="citizen">Citizen</label>
+  <input type="radio" id="foreign" name="citizenship" value="foreign">
+  <label for="foreign">Foreign National</label><br>
+  
+  <label for="documents">Upload Required Documents:</label>
+  <input type="file" id="documents" name="documents" accept=".pdf,.doc,.docx" multiple required><br>
+  
+  <input type="submit" value="submit"
+</form>
+</body>
+</html>
